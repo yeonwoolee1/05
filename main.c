@@ -5,13 +5,12 @@
 
 int main(int argc, char *argv[]) {
 	int a;
+	printf("number:");
 	scanf("%i",&a);
-	if (a>0)
-		printf("positive");
-	else if(a<0)
-		printf("negative");
+	if (a>=0)
+		printf("absolute value: %i\n",a);
 	else
-		printf("zero"); 
+		printf("absolute value: %i\n",-a); 
 	
 	return 0;
 }
